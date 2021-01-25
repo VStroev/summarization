@@ -12,6 +12,13 @@ First: download resources
 
 Archive contains trained model, w2v embeddings and held out 10K test samples
 
+Extract it's contents in project root
+
+```
+cd summarization/
+tar -xvf resources.tar.gz
+```
+
 Build docker image
 
 `docker build . -t summary`
