@@ -4,6 +4,17 @@
 There is a simple approach for extractive summarization: selecting best sentences from text. 
 I use simple classification using perceptron with mean w2v vectors of sentence words.   
 
+Onk held out test set model has following results:
+```
+====================================
+| metric | precision | recall | f1 |
+====================================
+| rouge-1 | 0.1878293991156369 | 0.6420486830922776 | 0.280730641181189 |
+| rouge-2 | 0.08961856806317192 | 0.3105037179892602 | 0.13436467474660363 |
+| rouge-l | 0.17876295584133 | 0.5642170115264853 | 0.263445101324686 |
+====================================
+```
+
 ## Demonstration
 
 First: download resources 
