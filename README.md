@@ -4,7 +4,7 @@
 There is a simple approach for extractive summarization: selecting best sentences from text. 
 I use simple classification using perceptron with mean w2v vectors of sentence words.   
 
-On held out test set model has following results:
+On holdout test set model has following results:
 ```
 ====================================
 | metric | precision | recall | f1 |
@@ -21,7 +21,7 @@ First: download resources
 
 `https://drive.google.com/file/d/1L0ujNRNDnbFAMUFWOlrkxt6FN0K5d3j4/view?usp=sharing` 
 
-Archive contains trained model, w2v embeddings and held out 10K test samples
+Archive contains trained model, w2v embeddings and holdout 10K test samples
 
 Extract it's contents in project root
 
@@ -34,7 +34,7 @@ Build docker image
 
 `docker build . -t summary`
 
-To test model on 10K held out examples run
+To test model on 10K holdout examples run
 
 `docker run summary test`
 
